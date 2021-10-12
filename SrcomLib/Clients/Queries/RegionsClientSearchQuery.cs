@@ -41,7 +41,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<IReadOnlyList<Region>> ExecuteSearchAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _regionsClient.ExecuteSearchAsync(ignoreCache, cancellationToken);
+            return await _regionsClient.ExecuteSearchAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

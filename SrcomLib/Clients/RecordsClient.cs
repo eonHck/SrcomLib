@@ -96,7 +96,7 @@ namespace SrcomLib.Clients
         /// <inheritdoc/>
         public async Task<IReadOnlyList<Leaderboard>> ExecuteSearchAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.ExecuteSearchAsync(ignoreCache, cancellationToken);
+            return await _baseClient.ExecuteSearchAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

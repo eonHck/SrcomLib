@@ -103,7 +103,7 @@ namespace SrcomLib.Clients
         /// <inheritdoc/>
         public async Task<IReadOnlyList<PersonalBests>> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.GetListAsync(ignoreCache, cancellationToken);
+            return await _baseClient.GetListAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

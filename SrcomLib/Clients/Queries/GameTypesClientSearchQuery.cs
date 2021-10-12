@@ -41,7 +41,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<IReadOnlyList<GameType>> ExecuteSearchAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _gameTypesClient.ExecuteSearchAsync(ignoreCache, cancellationToken);
+            return await _gameTypesClient.ExecuteSearchAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

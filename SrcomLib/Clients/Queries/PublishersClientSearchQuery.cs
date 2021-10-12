@@ -41,7 +41,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<IReadOnlyList<Publisher>> ExecuteSearchAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _publishersClient.ExecuteSearchAsync(ignoreCache, cancellationToken);
+            return await _publishersClient.ExecuteSearchAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

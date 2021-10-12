@@ -160,13 +160,13 @@ namespace SrcomLib.Clients
 
         internal async Task<Game> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.GetAsync(ignoreCache, cancellationToken);
+            return await _baseClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
         public async Task<IReadOnlyList<Game>> ExecuteSearchAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.ExecuteSearchAsync(ignoreCache, cancellationToken);
+            return await _baseClient.ExecuteSearchAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         internal Game Get(bool ignoreCache = false)

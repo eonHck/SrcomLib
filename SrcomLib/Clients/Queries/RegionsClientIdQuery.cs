@@ -19,7 +19,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<Region> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _regionsClient.GetAsync(ignoreCache, cancellationToken);
+            return await _regionsClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

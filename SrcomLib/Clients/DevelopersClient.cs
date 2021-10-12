@@ -54,13 +54,13 @@ namespace SrcomLib.Clients
         /// <inheritdoc/>
         internal async Task<Developer> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.GetAsync(ignoreCache, cancellationToken);
+            return await _baseClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
         public async Task<IReadOnlyList<Developer>> ExecuteSearchAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.ExecuteSearchAsync(ignoreCache, cancellationToken);
+            return await _baseClient.ExecuteSearchAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         internal Developer Get(bool ignoreCache = false)

@@ -104,7 +104,7 @@ namespace SrcomLib.Clients
 
         internal async Task<Category> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.GetAsync(ignoreCache, cancellationToken);
+            return await _baseClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         internal Category Get(bool ignoreCache = false)
@@ -114,7 +114,7 @@ namespace SrcomLib.Clients
 
         internal async Task<IReadOnlyList<Category>> GetListAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.GetListAsync(ignoreCache, cancellationToken);
+            return await _baseClient.GetListAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         internal IReadOnlyList<Category> GetList(bool ignoreCache = false)

@@ -61,7 +61,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<Category> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _categoriesClient.GetAsync(ignoreCache, cancellationToken);
+            return await _categoriesClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

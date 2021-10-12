@@ -34,7 +34,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<IReadOnlyList<Level>> GetListAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _levelsClient.GetListAsync(ignoreCache, cancellationToken);
+            return await _levelsClient.GetListAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

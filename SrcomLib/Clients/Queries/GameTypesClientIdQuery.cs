@@ -19,7 +19,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<GameType> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _gameTypesClient.GetAsync(ignoreCache, cancellationToken);
+            return await _gameTypesClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

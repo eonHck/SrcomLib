@@ -40,7 +40,7 @@ namespace SrcomLib.Clients
         /// <inheritdoc/>
         public async Task<Variable> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.GetAsync(ignoreCache, cancellationToken);
+            return await _baseClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
@@ -52,7 +52,7 @@ namespace SrcomLib.Clients
         /// <inheritdoc/>
         public async Task<IReadOnlyList<Variable>> GetListAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _baseClient.GetListAsync(ignoreCache, cancellationToken);
+            return await _baseClient.GetListAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

@@ -19,7 +19,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<Platform> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _platformsClient.GetAsync(ignoreCache, cancellationToken);
+            return await _platformsClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

@@ -19,7 +19,7 @@ namespace SrcomLib.Clients.Queries
         /// <inheritdoc/>
         public async Task<Publisher> GetAsync(bool ignoreCache = false, CancellationToken cancellationToken = default)
         {
-            return await _publishersClient.GetAsync(ignoreCache, cancellationToken);
+            return await _publishersClient.GetAsync(ignoreCache, cancellationToken).ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
