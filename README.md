@@ -23,5 +23,5 @@ SrcomLib allows access for the following objects from the Speedrun.com api:
 * Regions
 * Runs
 * Series
-* Uesrs
+* Users
 * Variables
