@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -6,10 +6,18 @@
     <Authors>eonHck</Authors>
     <PackageProjectUrl>https://github.com/eonHck/SrcomLib</PackageProjectUrl>
     <RepositoryUrl>https://github.com/eonHck/SrcomLib</RepositoryUrl>
+    <Title>SrcomLib</Title>
     <Description>A .Net Standard library for using and interacting with the Speedrun.com api with a fluent syntax.</Description>
+    <PackageDescription>A .Net Standard library for using and interacting with the Speedrun.com api with a fluent syntax.</PackageDescription>
+    <Summary>A .Net Standard library for using and interacting with the Speedrun.com api with a fluent syntax.</Summary>
     <PackageReleaseNotes>Currently SrcomLib only supports GET endpoints, but support for POST, PUT, and DELETE on the Runs endpoint is planned for a future release.</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <Copyright>Copyright (c) 2021 eonHck</Copyright>
+    <PackageTags>speedrun.com speedrun srcom api speed run</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageIcon>SrcomLib-icon.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +29,10 @@
 
   <ItemGroup>
     <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\SrcomLib-icon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
