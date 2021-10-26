@@ -73,10 +73,10 @@ namespace SrcomLib.ApiObjects
         public List<Link> Links { get; set; }
 
         [JsonIgnore]
-        public List<Player> Players => PrivatePlayers?.Data;
+        public List<User> Players => PrivatePlayers?.Data;
 
         [JsonProperty("players")]
-        private ApiResponseObject<List<Player>> PrivatePlayers { get; set; }
+        private ApiResponseObject<List<User>> PrivatePlayers { get; set; }
 
         [JsonIgnore]
         public List<Variable> Variables => PrivateVariables?.Data;

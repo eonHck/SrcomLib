@@ -97,7 +97,7 @@ namespace SrcomLib.ResponseObjects
         /// <summary>
         /// List of Players with runs on the leaderboard, null unless embedded in the request
         /// </summary>
-        public IReadOnlyList<Player> Players { get; set; }
+        public IReadOnlyList<User> Players { get; set; }
 
         /// <summary>
         /// Variables associated with the Game and Category/Level, null unless embedded in the request
