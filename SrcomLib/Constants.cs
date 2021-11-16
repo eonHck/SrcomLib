@@ -405,7 +405,7 @@ namespace SrcomLib
             {typeof(Variable), ApiObject.Variable},
         };
 
-        internal static readonly string VariablePrefix = "var-";
+        internal static string VariablePrefix => "var-";
 
         internal struct EmbedNames
         {

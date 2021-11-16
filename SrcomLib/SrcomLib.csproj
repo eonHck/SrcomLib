@@ -18,6 +18,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageIcon>SrcomLib-icon.png</PackageIcon>
     <PackageIconUrl />
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
