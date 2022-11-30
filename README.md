@@ -1,4 +1,6 @@
-# SrcomLib.
+# SrcomLib
+[![Nuget](https://img.shields.io/nuget/v/SrcomLib)](https://www.nuget.org/packages/SrcomLib/)
+
 A .Net Standard library for using and interacting with the [Speedrun.com api](https://github.com/speedruncomorg/api) with a fluent syntax.  Currently SrcomLib only supports GET endpoints, but support for POST, PUT, and DELETE on the Runs endpoint is planned for a future release.
 
 Simple Usage:
