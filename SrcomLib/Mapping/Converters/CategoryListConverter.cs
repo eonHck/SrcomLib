@@ -28,6 +28,7 @@ namespace SrcomLib.Mapping.Converters
                 cfg.CreateMap<List<apiSub.Link>, IReadOnlyList<resSub.Link>>().ConvertUsing<LinkListConverter>();
                 cfg.CreateMap<string, resSub.CategoryType>().ConvertUsing<CategoryTypeConverter>();
                 cfg.CreateMap<List<api.Variable>, IReadOnlyList<res.Variable>>().ConvertUsing<VariableListConverter>();
+                cfg.CreateMap<string, resSub.PlayersType>().ConvertUsing<PlayersTypeConverter>();
             });
             var mapper = new Mapper(config);
 

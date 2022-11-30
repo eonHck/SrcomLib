@@ -10,6 +10,11 @@ namespace SrcomLib.Mapping.Converters
     {
         public IReadOnlyList<Uri> Convert(Videos source, IReadOnlyList<Uri> destination, ResolutionContext context)
         {
+            if (source is null || source.Links is null)
+            {
+                return default;
+            }
+            
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<BasicLink, Uri>().ConvertUsing<UriBasicLinkConverter>();
