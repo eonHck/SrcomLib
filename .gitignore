@@ -1,3 +1,4 @@
-.vs
+.vs/
+.idea/
 SrcomLib/bin/
 SrcomLib/obj/
